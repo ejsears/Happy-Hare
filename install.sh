@@ -1710,7 +1710,7 @@ KLIPPER_SERVICE=klipper.service
 
 while getopts "a:b:k:c:m:r:idsz" arg; do
     case $arg in
-        a) KLIPPER_SERVICE=${OPTARG};;
+        a) KLIPPER_SERVICE=${OPTARG}.service;;
         b) N_BRANCH=${OPTARG};;
         k) KLIPPER_HOME=${OPTARG};;
         m) MOONRAKER_HOME=${OPTARG};;
